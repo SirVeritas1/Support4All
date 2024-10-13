@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support4All - Vi er her for dig</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="https://github.com/Support4All/Support4All/blob/main/Support%204%20All.png?raw=true" type="image/png">
+    <style>
+    /* Brug Nunito Black */
+    body {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        background-color: #0A0A0A;
+        background-image: linear-gradient(135deg, #1C1C1C 25%, #2D2D2D 50%, #4A4A4A 75%);
+        overflow-x: hidden;
+    }
+
+    /* Futuristisk banner */
+    header .banner {
+        background-color: transparent;
+        color: #fff;
+        padding: 120px 20px;
+        text-align: center;
+        background-image: url('path-to-futuristic-banner-image.jpg'); /* Tilføj dit grafiske banner her */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+        border-bottom: 2px solid #4A90E2;
+        animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {box-shadow: 0 0 15px #4A90E2;}
+        to {box-shadow: 0 0 30px #4A90E2;}
+    }
+
+    header .banner h1 {
+        font-size: 80px;
+        margin: 0;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-50px);}
+        100% { opacity: 1; transform: translateY(0);}
+    }
+
+    header .banner p {
+        font-size: 28px;
+        margin: 20px 0 0;
+        letter-spacing: 1px;
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 2s ease-in-out 1s;
+    }
+
+    /* Introduktion */
+    .intro {
+        padding: 80px 20px;
+        text-align: center;
+        background: #1E1E1E;
+        color: #4A90E2;
+        border-top: 2px solid #4A90E2;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro h2 {
+        font-size: 40px;
+        color: #4A90E2;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .intro p {
+        font-size: 20px;
+        line-height: 1.8;
+        max-width: 900px;
+        margin: 0 auto;
+        color: #B0F1FF;
+        animation: fadeIn 2s ease-in-out 1s;
+    }
+
+    /* Ressource-sektion */
+    .resources {
+        background-color: #101010;
+        padding: 60px 20px;
+        text-align: center;
+        color: #B0F1FF;
+    }
+
+    .resources h2 {
+        font-size: 40px;
+        color: #4A90E2;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .resources p, .resources li {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    .resources ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .resources ul li {
+        margin: 20px 0;
+    }
+
+    .resources ul li a {
+        color: #4A90E2;
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    .resources ul li a:hover {
+        border-bottom: 2px solid #4A90E2;
+    }
+
+    .disclaimer {
+        margin-top: 30px;
+        font-size: 16px;
+        color: #666;
+    }
+
+    /* Donation-sektion */
+    .donation {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: #181818;
+        color: #4A90E2;
+        border-top: 2px solid #4A90E2;
+    }
+
+    .donation h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .donation p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .donation .donate-button {
+        background-color: #4A90E2;
+        color: #000;
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .donation .donate-button:hover {
+        background-color: #007bb8; /* Slightly darker for hover effect */
+    }
+
+    /* Galleri-sektion */
+    .gallery {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: #0A0A0A;
+        color: #4A90E2;
+        border-top: 2px solid #4A90E2;
+    }
+
+    .gallery h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Social Media-sektion */
+    .social-media {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #0D0D0D;
+        color: #4A90E2;
+        border-top: 2px solid #4A90E2;
+    }
+
+    .social-media h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .social-media a {
+        color: #4A90E2;
+        margin: 0 15px;
+        font-size: 24px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-media a:hover {
+        transform: scale(1.2);
+    }
+
+    /* Futuristisk footer */
+    footer {
+        background-color: #0D0D0D;
+        color: #4A90E2;
+        text-align: center;
+        padding: 40px 0;
+        margin-top: 60px;
+        border-top: 2px solid #4A90E2;
+        box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    footer p a {
+        color: #4A90E2;
+        text-decoration: none;
+    }
+
+    footer p a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Support4All</h1>
+            <p>Du er ikke alene. Kæmp videre!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Vores Mission</h2>
+            <p>Hos Support4All ønsker vi at skabe et fællesskab, hvor du kan finde støtte og opmuntring. Vores plakater og positive budskaber er her for at inspirere og motivere dem, der har brug for det.</p>
+        </section>
+
+        <section class="resources">
+            <h2>Brug for hjælp?</h2>
+            <p>Vi er ikke tilknyttet officielle støttetjenester, men vi opfordrer dig til at kontakte de følgende ressourcer:</p>
+            <ul>
+                <li><a href="#">Sundhedsstyrelsen</a></li>
+                <li><a href="#">BørneTelefonen</a></li>
+                <li><a href="#">Livslinien</a></li>
+            </ul>
+            <div class="disclaimer">* Vær opmærksom på, at vores ressourcer ikke er professionelle rådgivningstjenester.</div>
+        </section>
+
+        <section class="donation">
+            <h2>Støt Vores Arbejde</h2>
+            <p>Dine donationer hjælper os med at producere og dele positive budskaber. Enhver støtte tæller!</p>
+            <button class="donate-button">Doner Nu</button>
+        </section>
+
+        <section class="gallery">
+            <h2>Vores Galleri</h2>
+            <img src="path-to-image1.jpg" alt="Billede 1">
+            <img src="path-to-image2.jpg" alt="Billede 2">
+            <img src="path-to-image3.jpg" alt="Billede 3">
+            <img src="path-to-image4.jpg" alt="Billede 4">
+        </section>
+
+        <section class="social-media">
+            <h2>Følg Os</h2>
+            <a href="https://www.facebook.com/support4all" target="_blank">Facebook</a>
+            <a href="https://twitter.com/support4all" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/support4all" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/company/support4all" target="_blank">Tiktok</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Support4All. Alle rettigheder forbeholdes. | <a href="https://github.com/Support4All/Support4All/blob/main/LICENSE" target="_blank">MIT License</a></p>
+    </footer>
+</body>
+</html>
