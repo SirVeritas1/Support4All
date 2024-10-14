@@ -1,6 +1,5 @@
-COPYRIGHT-MEDDELELSE OG LICENSAFTALE FOR SUPPORT4ALL
-
-Sidst opdateret: 14. oktober 2024
+# COPYRIGHT-MEDDELELSE OG LICENSAFTALE FOR SUPPORT4ALL
+*Sidst opdateret: 14. oktober 2024*
 
 Support4All (“Organisationen”) opererer under en dobbeltlicensstruktur. Hjemmesidens kode er licenseret under den tilladende MIT-licens, mens alle grafiske designs, billeder og videoindhold er strengt ophavsretligt beskyttet og underlagt specifikke begrænsninger for anvendelse.
 
