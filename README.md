@@ -6,8 +6,8 @@
 
 **Hvorfor blev Support4All lavet?** Support4All også kendt som Stoette4All blev lavet i det østlige danmark, da der manglede positivitet rundt omkring i offenligheden, så dirktøren af Support4All lavet Support4All
 
-<hr> </hr>
+<hr>
 
 ## Hvorfor er Support4All anonymt?
 
-**Simplet:** 
+**Simplet:** Vi synes ikke at hver eklent person skal have ære og 
